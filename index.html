@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="styles.css">
+    <script src="interactive.js"> </script>
+    <title></title>
+  </head>
+  <body>
+
+<p><h1 style="text-align:center;"> Loni’s List of Awesome Things You Might Like!</h1></p>
+
+<p><h2 style="text-align:center;">Pick Your Liking:</h2></p>
+
+
+<p id="left"><font size="6"><a href="Music.html">Music</a></p>
+
+<p id="right"><font size="6"><a href="Video Games.html">VideoGames</a></p>
+
+<p><img src="https://i.gifer.com/4zb0.gif" alt="https://i.gifer.com/4zb0.gif" width="300" height="300" align="middle" </p>
+
+<p id="left"><font size="6"><a href="Animals.html">Animals</a></p>
+
+<p id="right"><font size= "6"><a href="Movies.html">Movies</a><img src="http://i.imgur.com/bZIQIad.gif" alt="http://i.imgur.com/bZIQIad.gif" width="300" height="300"</p>
+
+<p><img src="https://78.media.tumblr.com/c99a579db3ae0fc164bf4cca148885d3/tumblr_mjgv8kEuMg1s87n79o1_250.gif" alt="https://78.media.tumblr.com/c99a579db3ae0fc164bf4cca148885d3/tumblr_mjgv8kEuMg1s87n79o1_250.gif" align="middle" </p>
+<p><img src="https://media.serious.io/471c58a36b8b39f5/serious.gif" alt="https://media.serious.io/471c58a36b8b39f5/serious.gif" width= "300" height="300" align="right" </p>
+<form>
+  <textarea id="words" rows="10" cols="70"></textarea>
+  <input class="commentbutton" type="button" onclick="getwords()" value="ENTER" /> <br>
+  <h2>Comments: </h2>
+  <p id="para"></p>
+</form>
+
+<script type="text/javascript">
+function getwords() {
+text = words.value;
+document.getElementById("para").innerHTML += '<p>'+text
+document.getElementById("words").value = ""
+}
+</script>
+  </body>
+</html>
